@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ishop2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+
+    <script src="ishopBlock.js"></script>
+    <link rel="stylesheet" type="text/css" href="ishopBlock.css" />
+    <script src="KindProduction.js"></script>
+    <link rel="stylesheet" type="text/css" href="KindProduction.css" />
+    <script src="phones.js"></script>
+    <link rel="stylesheet" type="text/css" href="phones.css" />
+
+
+    <script>
+        var titleText = 'Перечень телефонов';
+        var productionArr = [{
+            brand: 'samsung Galaxy S7',
+            cost: '1000 рублей',
+            photoURL: 'http://e-mobile.by/wp-content/uploads/2017/09/ru-galaxy-s7-edge-g935fd-sm-g935fzduser-gold-Front-61162651.jpg',
+            code: 1,
+            count: 22
+        }, {
+            brand: 'Archos Diamond Alpha',
+            cost: '250 рублей',
+            photoURL: 'https://d2giyh01gjb6fi.cloudfront.net/phone_front/0001/86/thumb_85998_phone_front_big.jpeg',
+            code: 2,
+            count: 120
+        }, {
+            brand: 'Apple iPhone 7',
+            cost: '1260 рублей',
+            photoURL: 'https://iphone-istore.by/assets/images/categor/apple-iphone-7-plus/2b11cb0e9a9a8ef59d04f4a7125918f5.jpg',
+            code: 3,
+            count: 200
+        }, {
+            brand: 'Redmi 5A Global',
+            cost: '224 рублей',
+            photoURL: 'http://xiaomionline.by/image/cache/catalog/Xiaomi/Redmi5A/54-800x800.jpg',
+            code: 4,
+            count: 300
+        }, {
+            brand: 'Nokia 6',
+            cost: '540 рублей',
+            photoURL: 'https://shop.mts.by/upload/resize_cache/iblock/411/600_600_1/HMD_Rational_6.1_BlackCopper_Back_Final_LowRes_21122017_ROW.png',
+            code: 5,
+            count: 100
+
+        }];
+
+
+        ReactDOM.render(
+            React.createElement(PhonesBlock, {
+                title: titleText,
+                production: productionArr,
+
+            }),
+
+            document.getElementById('container')
+
+        );
+    </script>
+</body>
+
+</html>
