@@ -1,0 +1,22 @@
+.filter {
+    width: 400px;
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    border-style: outset;
+    border-color: brown;
+    background-color: khaki;
+    border-width: 6px;
+    padding-left: 10px;
+}
+
+.disease {
+    overflow: scroll;
+    height: 250px;
+    width: 400px;
+    font-size: 18px;
+}
+
+.hr {
+    width: 360px;
+}
